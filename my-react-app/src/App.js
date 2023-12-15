@@ -26,6 +26,7 @@ function App() {
   </header>*/}
 
 <WeekCalendar/>
+<ZipPostalCode/>
     </div>
   );
 }

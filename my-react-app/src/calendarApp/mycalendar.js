@@ -4,21 +4,16 @@ import './calendar.css';
 
 
 export function WeekCalendar (){
- // debugger;
 const [Current,setCurrent] = useState(moment());
 console.log(Current)
 
 const handleChangepre = () =>{
-  debugger
   setCurrent(Current.clone().subtract(1, "week"));
 }
 
 const handleChangenext = () =>{
- debugger;
   setCurrent(Current.clone().add(1,'week'));
 }
-
-
   return(
 <>
 <div style={{border:'3px solid black',paddingBottom:'20%', marginTop:'30px', marginBottom:'50px'}}>
